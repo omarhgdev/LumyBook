@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lumy.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+534ed0bdeedd47491351d866699dd74cf2484a73")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eaf88740ab3ecc9eeb037d916a6b96f93da8d741")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lumy.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lumy.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -19,7 +19,7 @@ interface Libro {
     <div class="contenedor">
       <header>
         <h1>LumyBook</h1>
-        <p>Tu buscador personal de libros</p>
+        <p>Buscador de Libros Hgdev</p>
       </header>
 
       <nav>
@@ -64,6 +64,21 @@ interface Libro {
       padding: 3% 25% 3% 25%;
       box-sizing: border-box;
       background: #0D1117;
+      transition: padding 0.3s ease;
+    }
+
+    @media (max-width: 1024px) {
+       .contenedor { 
+                    padding: 3% 10%; }
+    }
+
+    @media (max-width: 768px) {
+       .contenedor { padding: 20px; } 
+       
+       h1 { font-size: 32px; } 
+       
+       .buscador { flex-direction: column; }
+       .buscador button { width: 100%; }
     }
 
     header { 
@@ -100,13 +115,14 @@ interface Libro {
       cursor: pointer; 
       border: none; 
       border-radius: 5px; 
-      background: white;
+      background: #fff;
+      color: #000;
       font-family: Inter, serif;
     }
     
     button.activo { 
-      background: #1D2066; 
-      color: white; 
+      background: #fff; 
+      color: #000; 
     }
     
     .buscador { 
@@ -138,7 +154,6 @@ interface Libro {
       transition: transform 0.2s;
       display: flex;            
       flex-direction: column;
-      
       background: #3D444D; 
       box-shadow: 0 4px 6px rgba(0,0,0,0.3);
     }

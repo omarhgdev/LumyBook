@@ -196,6 +196,7 @@ C:\Users\knsou\Documents\ProyectosVS\Lumy\Lumy.Api\obj\Debug\net10.0\Lumy.Api.As
 C:\Users\knsou\Documents\ProyectosVS\Lumy\Lumy.Api\obj\Debug\net10.0\Lumy.Api.csproj.CoreCompileInputs.cache
 C:\Users\knsou\Documents\ProyectosVS\Lumy\Lumy.Api\obj\Debug\net10.0\Lumy.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\knsou\Documents\ProyectosVS\Lumy\Lumy.Api\obj\Debug\net10.0\Lumy.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\knsou\Documents\ProyectosVS\Lumy\Lumy.Api\obj\Debug\net10.0\Lumy.Api.sourcelink.json
 C:\Users\knsou\Documents\ProyectosVS\Lumy\Lumy.Api\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Users\knsou\Documents\ProyectosVS\Lumy\Lumy.Api\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\knsou\Documents\ProyectosVS\Lumy\Lumy.Api\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
@@ -211,4 +212,3 @@ C:\Users\knsou\Documents\ProyectosVS\Lumy\Lumy.Api\obj\Debug\net10.0\refint\Lumy
 C:\Users\knsou\Documents\ProyectosVS\Lumy\Lumy.Api\obj\Debug\net10.0\Lumy.Api.pdb
 C:\Users\knsou\Documents\ProyectosVS\Lumy\Lumy.Api\obj\Debug\net10.0\Lumy.Api.genruntimeconfig.cache
 C:\Users\knsou\Documents\ProyectosVS\Lumy\Lumy.Api\obj\Debug\net10.0\ref\Lumy.Api.dll
-C:\Users\knsou\Documents\ProyectosVS\Lumy\Lumy.Api\obj\Debug\net10.0\Lumy.Api.sourcelink.json
