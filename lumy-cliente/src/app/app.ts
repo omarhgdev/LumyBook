@@ -55,76 +55,122 @@ interface Libro {
     </div>
   `,
   styles: [`
-    .contenedor { max-width: 800px; 
-                  margin: 0 auto; 
-                  font-family: 'Playfair Display', serif;
-                  padding: 20px; 
-                }
+    .contenedor { 
+      width: 100%;
+      min-height: 100vh; 
+      height: auto;
+      margin: 0 auto; 
+      font-family: 'Playfair Display', serif;
+      padding: 3% 25% 3% 25%;
+      box-sizing: border-box;
+      background: #0D1117;
+    }
 
-    header { text-align: center; 
-             margin-bottom: 30px; 
-            }
+    header { 
+      text-align: center; 
+      margin-bottom: 30px; 
+      padding: 10px;
+      border-radius: 5px;
+    }
     
-    h1 { color: #1D2066; 
-         margin: 0; 
-        }
-    
-    nav { display: flex; 
-          justify-content: center; 
-          gap: 10px; 
-          margin-bottom: 20px; 
-        }
-    
-    button { padding: 10px 20px; 
-             cursor: pointer; 
-             border: none; 
-             border-radius: 5px; 
-             background: white;
-             font-family: Inter, serif;
-            }
-    
-    button.activo { background: #1D2066; 
-                    color: white; 
-                  }
-    
-    .buscador { display: flex; 
-                gap: 10px; 
-                margin-bottom: 20px;
-                font-family: Inter, serif;
-              }
+    h1 { 
+      color: #fff; 
+      margin: 0;
+      font-size: 50px;
+    }
 
-    input { flex: 1; 
-            padding: 10px; 
-            border-radius: 5px; 
-            border: 1px solid #ccc; 
-          }
+    h3 { 
+      color: #fff; 
+    }
+
+    p {
+      color: #fff;
+      font-family: Inter, Serif;
+    }
     
-    .grilla { display: grid; 
-              grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
-              gap: 15px; 
-            }
+    nav { 
+      display: flex; 
+      justify-content: center; 
+      gap: 10px; 
+      margin-bottom: 20px; 
+    }
     
-    .tarjeta { border: 1px solid #ddd; 
-               padding: 15px; 
-               border-radius: 8px; 
-               background: white; 
-               box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    button { 
+      padding: 10px 20px; 
+      cursor: pointer; 
+      border: none; 
+      border-radius: 5px; 
+      background: white;
+      font-family: Inter, serif;
+    }
     
-    .fav { border-left: 
-           5px solid #121440; 
-          }
+    button.activo { 
+      background: #1D2066; 
+      color: white; 
+    }
     
-    .btn-guardar { background: #121440; 
-                   color: white; 
-                   width: 100%; 
-                   margin-top: 10px; 
-                  }
+    .buscador { 
+      display: flex; 
+      gap: 10px; 
+      margin-bottom: 20px;
+      font-family: Inter, serif;
+    }
+
+    input { 
+      flex: 1; 
+      padding: 10px; 
+      border-radius: 5px; 
+      border: 1px solid #ccc; 
+    }
     
-    .btn-eliminar { background: #8F0101; 
-                    color: white; 
-                    width: 100%; 
-                    margin-top: 10px; 
-                  }
+    .grilla { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+      gap: 15px; 
+    }
+    
+    .tarjeta { 
+      border: 1px solid #30363d;
+      padding: 15px; 
+      border-radius: 8px;
+      height: 100%;
+      box-sizing: border-box;
+      transition: transform 0.2s;
+      display: flex;            
+      flex-direction: column;
+      
+      background: #3D444D; 
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+
+    .tarjeta:hover { 
+      transform: translateY(-3px); 
+      box-shadow: 0 6px 12px rgba(0,0,0,0.5); 
+      border-color: #fff; 
+    }
+    
+    .fav { 
+      border-left: 5px solid #121440; 
+    }
+    
+    .btn-guardar { 
+      background: #fff; 
+      color: #000; 
+      width: 100%; 
+      margin-top: auto;
+    }
+
+    .btn-guardar:hover { 
+      background: #E7E7E7;
+      color: #000; 
+    }
+    
+    .btn-eliminar { 
+      background: #8F0101; 
+      color: white; 
+      width: 100%; 
+      margin-top: auto;
+    }
   `]
 })
 export class App {

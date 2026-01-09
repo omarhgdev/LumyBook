@@ -23,8 +23,6 @@ public class ServicioLibros : IServicioLibros
             var respuesta = await _http.GetFromJsonAsync<RespuestaOpenLibrary>(url);
 
             if (respuesta?.Docs == null) return new List<LibroDto>();
-
-            // Convertimos la respuesta en inglés a nuestro modelo Lumy en español
             return respuesta.Docs.Select(doc => new LibroDto
             {
                 IdExterno = doc.Key,
@@ -39,25 +37,16 @@ public class ServicioLibros : IServicioLibros
         }
     }
 }
-
-// Clases auxiliares para leer el JSON externo
-// Clases auxiliares para leer el JSON externo
 public class RespuestaOpenLibrary 
 { 
-    // Solución: Le decimos "= new();" para que nazca como una lista vacía, no nula.
+
     public List<DocExterno> Docs { get; set; } = new(); 
 }
 
 public class DocExterno 
 { 
-    // Solución: Le decimos "= string.Empty;" para que nazca como texto vacío.
     public string Key { get; set; } = string.Empty;
-    
     public string Title { get; set; } = string.Empty;
-    
-    // Solución: Lista vacía por defecto
     public List<string> Author_Name { get; set; } = new();
-    
-    // Este no da error porque tiene el "?" (int?), lo que significa que LE PERMITES ser nulo.
     public int? First_Publish_Year { get; set; } 
 }
