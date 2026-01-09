@@ -1,0 +1,6 @@
+@Lumy.Api_HostAddress = http://localhost:5058
+
+GET {{Lumy.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
