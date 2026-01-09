@@ -48,6 +48,7 @@ dotnet run
 ```
 Angular
 ```bash
+cd lumy-cliente
 npm install
 ng serve
 ```
