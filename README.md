@@ -22,7 +22,7 @@ GO
 
 CREATE TABLE Favoritos (
     Id INT IDENTITY(1,1) PRIMARY KEY,
-    UsuarioId INT NOT NULL,        -- Simulación de usuario (por defecto 1)
+    UsuarioId INT NOT NULL,        
     IdExterno NVARCHAR(100) NOT NULL,
     Titulo NVARCHAR(255) NOT NULL,
     Autores NVARCHAR(255),
