@@ -13,6 +13,9 @@
 ---
 
 ### 1. Ejecutar DDL
+Mencionar que he usado un usuario fijo (Opción A) llamado 'usuario_prueba'.
+<br>
+Para evitar duplicados a la tabla 'UsuarioId' se le restringe tener el mismo 'IdExterno' más de una vez.
 ```sql
 -- 1. Crear bd
 
@@ -93,6 +96,7 @@ ng serve
 ```
 ### 4. Ejecutar Tests.
 Dentro de la carpeta 'Lumy', ejecutar 'dotnet test' para las pruebas unitarias.
+<br>
 Las pruebas se encuentras en Lumy.Tests > PruebasUnitarias.cs.
 ```bash
 dotnet test
