@@ -10,7 +10,8 @@ namespace Lumy.Tests
 {
     public class PruebasLibros
     {
-        private ContextoLumy CrearContextoFalso(string nombreDb)
+                // Aqui hago la conexión a la bd
+                private ContextoLumy CrearContextoFalso(string nombreDb)
         {
             var opciones = new DbContextOptionsBuilder<ContextoLumy>()
                 .UseInMemoryDatabase(databaseName: nombreDb)
@@ -19,6 +20,7 @@ namespace Lumy.Tests
             return new ContextoLumy(opciones);
         }
 
+        // Primera prueba, aqui se confirma si el sistema está guardando correctamente los libros.
         [Fact]
         public async Task GuardarFavorito_DebeRetornarOk_CuandoEsNuevo()
         {
@@ -31,6 +33,7 @@ namespace Lumy.Tests
             Assert.IsType<OkObjectResult>(resultado);
         }
 
+        // Segunda prueba, aqui se confirma que el sistema no guarde un libro que ya estaba guardado desde antes.
         [Fact]
         public async Task GuardarFavorito_DebeRetornarConflict_SiYaExiste()
         {
@@ -47,6 +50,7 @@ namespace Lumy.Tests
             Assert.IsType<ConflictObjectResult>(resultado);
         }
 
+        // Tercera prueba, aqui corroboro que la API no se caiga si se le envia un dato NULLL, sino que arroje un error.
         [Fact]
         public async Task GuardarFavorito_DebeRetornarBadRequest_SiEsNull()
         {
@@ -58,7 +62,7 @@ namespace Lumy.Tests
             Assert.IsType<BadRequestObjectResult>(resultado);
         }
 
-        [Fact]
+        // Cuarta prueba, el sistema avisa que no encontró nada en la base de datos en vez de fallar sin más.
         public async Task EliminarFavorito_DebeRetornarNotFound_SiNoExiste()
         {
             var db = CrearContextoFalso("DbTest4");
@@ -69,6 +73,7 @@ namespace Lumy.Tests
             Assert.IsType<NotFoundObjectResult>(resultado);
         }
 
+        // Quinta prueba, aqui se revisa que el libro se haya guardado correctamente en la base de datos sin hacer cambios al guardar.
         [Fact]
         public async Task GuardarFavorito_DebeGuardarDatosCorrectos()
         {
