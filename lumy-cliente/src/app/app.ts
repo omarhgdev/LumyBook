@@ -29,7 +29,7 @@ interface Libro {
 
       <section *ngIf="vista() === 'buscar'">
         <div class="buscador">
-          <input [(ngModel)]="textoBusqueda" (keyup.enter)="buscarLibros()" placeholder="Escribe un título (ej. Principito)...">
+          <input [(ngModel)]="textoBusqueda" (keyup.enter)="buscarLibros()" placeholder="Escribe un título (ej. El Principito)... y/o Autor/a">
           <button (click)="buscarLibros()">Ir</button>
         </div>
 
