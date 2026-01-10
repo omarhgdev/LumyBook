@@ -68,7 +68,7 @@ GO
 
 ```
 ### 2. Connection String
-Lumy.Api > appsettings.json
+Configurar en la ruta Lumy.Api > appsettings.json.
 ```json
 {
   "ConnectionStrings": {
@@ -79,17 +79,21 @@ Lumy.Api > appsettings.json
 ```
 
 ### 3. Ejecutar Proyecto
+Dentro de la carpeta 'Lumy', ingresar a la carpeta 'Lumy.Api' y ejecutar el backend.
 ```bash
 cd Lumy.Api
 dotnet run
 ```
-Angular
+
+Dentro de la carpeta 'Lumy', ingresar a la carpeta 'Lumy-cliente' y ejecutar el frontend.
 ```bash
 cd lumy-cliente
 npm install
 ng serve
 ```
-### 4. Ejecutar Tests
+### 4. Ejecutar Tests.
+Dentro de la carpeta 'Lumy', ejecutar 'dotnet test' para las pruebas unitarias.
+Las pruebas se encuentras en Lumy.Tests > PruebasUnitarias.cs.
 ```bash
 dotnet test
 ```
