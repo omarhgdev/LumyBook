@@ -20,7 +20,7 @@ namespace Lumy.Tests
             return new ContextoLumy(opciones);
         }
 
-        // Primera prueba, aqui se confirma si el sistema está guardando correctamente los libros.
+        // Primera prueba. aqui se confirma si el sistema está guardando correctamente los libros.
         [Fact]
         public async Task GuardarFavorito_DebeRetornarOk_CuandoEsNuevo()
         {
