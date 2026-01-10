@@ -212,16 +212,16 @@ export class App {
 
   guardar(libro: Libro) {
     this.http.post(`${this.apiUrl}/favoritos`, libro).subscribe({
-      next: () => alert('¡Guardado en Lumy!'),
+      next: () => alert('¡Guardado en la biblioteca!'),
       error: (e) => {
-        if(e.status === 409) alert('¡Ya tienes este libro en Lumy!');
+        if(e.status === 409) alert('¡Ya tienes este libro en la biblioteca!');
         else alert('Error al guardar');
       }
     });
   }
 
   eliminar(id: number) {
-    if(confirm('¿Seguro que quieres borrarlo?')) {
+    if(confirm('¿Estás Seguro/a que quieres borrarlo?')) {
       this.http.delete(`${this.apiUrl}/favoritos/${id}`)
         .subscribe(() => this.cargarFavoritos());
     }
